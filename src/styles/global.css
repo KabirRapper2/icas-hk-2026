@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+:root {
+  --transition-speed: 0.3s;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+.theme-light {
+  --bg-main: #f8f9fa;
+  --card-bg: #ffffff;
+  --accent: #0d6efd;
+}
+
+.theme-dark {
+  --bg-main: #121212;
+  --card-bg: #1e1e1e;
+  --accent: #0dcaf0;
+  background-color: #121212;
+  color: #e9ecef !important;
+}
+
+.theme-dark .card {
+  background-color: #1e1e1e;
+  color: white;
+  border: 1px solid #333;
+}
+
+.theme-dark .bg-inherit {
+  background-color: #121212 !important;
+}
+
+.rounded-4 {
+  border-radius: 1.25rem !important;
+}
+
+.btn {
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
